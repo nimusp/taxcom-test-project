@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7Vh-0t-qPt">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Лотерея-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LotteryViewController" customModule="Test_Taxcom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="2" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I5J-xb-rlB" userLabel="doorButton3">
+                                <rect key="frame" x="254" y="256.5" width="105" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="idO-rp-xvg"/>
+                                    <constraint firstAttribute="height" constant="125" id="vEa-dA-ZJo"/>
+                                </constraints>
+                                <state key="normal" image="door"/>
+                                <connections>
+                                    <action selector="doorTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Si4-ey-HT7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w0o-41-4gH" userLabel="doorButton2">
+                                <rect key="frame" x="135" y="256.5" width="105" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="6C1-WR-tHX"/>
+                                    <constraint firstAttribute="width" constant="105" id="Nfc-5a-tlh"/>
+                                </constraints>
+                                <state key="normal" image="door"/>
+                                <connections>
+                                    <action selector="doorTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UId-8P-sUo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o7Z-n9-Y2G">
+                                <rect key="frame" x="157" y="468" width="61" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Еще раз"/>
+                                <connections>
+                                    <action selector="repeatButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pXh-dt-P6N"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Os4-yS-GnR">
+                                <rect key="frame" x="16" y="90" width="343" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="J2Y-iO-acq"/>
+                                </constraints>
+                                <string key="text">За одной из этих трёх дверей приз.
+Попытайте удачу и выберите одну из дверей.</string>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bed-XY-0ao" userLabel="doorButton1">
+                                <rect key="frame" x="16" y="256.5" width="105" height="125"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="cxs-Wi-mgA"/>
+                                    <constraint firstAttribute="height" constant="125" id="lfG-dj-WyI"/>
+                                </constraints>
+                                <state key="normal" image="door"/>
+                                <connections>
+                                    <action selector="doorTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4wt-qu-rqT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="I5J-xb-rlB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="254" id="5FW-Qe-kGO"/>
+                            <constraint firstItem="Os4-yS-GnR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="AmH-Cx-xog"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Bed-XY-0ao" secondAttribute="trailing" constant="254" id="CfV-Xm-VdO"/>
+                            <constraint firstItem="w0o-41-4gH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Dpa-Pm-sO6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="o7Z-n9-Y2G" secondAttribute="bottom" constant="120" id="E4T-3W-fw6"/>
+                            <constraint firstItem="w0o-41-4gH" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="FzF-Bj-252"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Os4-yS-GnR" secondAttribute="trailing" constant="16" id="N72-zz-9vX"/>
+                            <constraint firstItem="o7Z-n9-Y2G" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="SLp-aO-vFS"/>
+                            <constraint firstItem="Bed-XY-0ao" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="STA-WT-5G6"/>
+                            <constraint firstItem="I5J-xb-rlB" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="WFb-lN-d9T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I5J-xb-rlB" secondAttribute="trailing" constant="16" id="bM2-oI-mSG"/>
+                            <constraint firstItem="w0o-41-4gH" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="bha-GB-kxo"/>
+                            <constraint firstItem="Os4-yS-GnR" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bhb-zw-5Ep"/>
+                            <constraint firstItem="Bed-XY-0ao" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="nmo-U4-J2Q"/>
+                            <constraint firstItem="Os4-yS-GnR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="vVA-iZ-LlG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Лотерея" image="game_controller" id="Mga-Rb-Qq2"/>
+                    <connections>
+                        <outlet property="repeatButton" destination="o7Z-n9-Y2G" id="eET-6O-1mf"/>
+                        <outlet property="textView" destination="Os4-yS-GnR" id="lve-8Z-Cu8"/>
+                        <outletCollection property="doorButtons" destination="Bed-XY-0ao" collectionClass="NSMutableArray" id="prE-d1-wdw"/>
+                        <outletCollection property="doorButtons" destination="w0o-41-4gH" collectionClass="NSMutableArray" id="dei-Ta-epH"/>
+                        <outletCollection property="doorButtons" destination="I5J-xb-rlB" collectionClass="NSMutableArray" id="rlm-hc-8V5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3064.8000000000002" y="555.47226386806597"/>
+        </scene>
+        <!--Теория-->
+        <scene sceneID="JCn-ar-JsO">
+            <objects>
+                <viewController id="wED-lf-u7U" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gMS-bh-r97">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L4T-QO-Ktr">
+                                <rect key="frame" x="16" y="20" width="343" height="598"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">	Согласно теории вероятностей вероятность выбрать дверь, за которой находится автомобиль, равна 1/3 для любой из трёх дверей. После первичного выбора вероятности распределяются следующим образом: вероятность выиграть с помощью выбранной двери 1/3, остальные 2/3 распределяются поровну между невыбранными дверьми.
+	После того, как ведущий открывет одну из двух дверей без призов, вероятности соотносятся следующим образом: вероятность выигрыша без смены выбранной двери так и остается равной 1/3, а вероятность выигрыша при смене выбранной двери равна 1 - 1/3 = 2/3.
+	Таким образом, при изменении своего выбора игрок увеличивает шансы на победу вдвое.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="L4T-QO-Ktr" firstAttribute="leading" secondItem="hWV-FO-srC" secondAttribute="leading" constant="16" id="0Tn-z4-t4a"/>
+                            <constraint firstItem="L4T-QO-Ktr" firstAttribute="top" secondItem="hWV-FO-srC" secondAttribute="top" id="jJf-Qn-t52"/>
+                            <constraint firstItem="L4T-QO-Ktr" firstAttribute="bottom" secondItem="hWV-FO-srC" secondAttribute="bottom" id="mDQ-qp-gHT"/>
+                            <constraint firstItem="hWV-FO-srC" firstAttribute="trailing" secondItem="L4T-QO-Ktr" secondAttribute="trailing" constant="16" id="oKq-QD-R0m"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hWV-FO-srC"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Теория" image="info" id="npL-Qk-yav"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OHA-YF-Gxj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4772" y="554.57271364317842"/>
+        </scene>
+        <!--Вычисления-->
+        <scene sceneID="ZKX-nO-bG8">
+            <objects>
+                <viewController id="jpz-YW-uUR" customClass="RepeatTabBarVewController" customModule="Test_Taxcom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nZx-BA-KS2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите число игр и нажмите &quot;Вычислить&quot;. Будет рассчитано число побед для обеих стратегий" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1c-2t-BE1">
+                                <rect key="frame" x="16" y="70" width="343" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="9tS-Cm-Bg6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OnR-bm-K4q">
+                                <rect key="frame" x="148.5" y="205" width="78" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="C2l-hC-pI7"/>
+                                    <constraint firstAttribute="height" constant="30" id="MfI-HB-2yB"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="cHA-Rx-fwq"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="78" id="tsW-pg-qpW"/>
+                                </constraints>
+                                <state key="normal" title="Вычислить"/>
+                                <connections>
+                                    <action selector="calculateButtonPressed:" destination="jpz-YW-uUR" eventType="touchUpInside" id="EFJ-0R-NUt"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="253" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a2k-US-iNe">
+                                <rect key="frame" x="80" y="160" width="215" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="HJo-ty-8e8"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Число побед при выборе другой двери:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FuS-6Q-pEQ">
+                                <rect key="frame" x="16" y="275" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="IJa-H4-zq3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ukM-rC-law">
+                                <rect key="frame" x="80" y="455" width="215" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JHa-FC-PJZ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sNi-H4-IeH">
+                                <rect key="frame" x="80" y="330" width="215" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="anQ-UB-anc"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cer-mm-xx5">
+                                <rect key="frame" x="315" y="164" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="JcD-CM-MB7"/>
+                                    <constraint firstAttribute="width" constant="22" id="UXc-2J-J9l"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="infoButtonPressed:" destination="jpz-YW-uUR" eventType="touchUpInside" id="N9M-fz-ocn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Число побед при выборе той же двери:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDh-VB-7gD">
+                                <rect key="frame" x="16" y="400" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="4tE-SG-R4B"/>
+                                    <constraint firstAttribute="height" constant="40" id="ubU-LE-0Rh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="249" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="aRs-aQ-gNM">
+                                <rect key="frame" x="246.5" y="205" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="K3N-wP-ltk"/>
+                                    <constraint firstAttribute="height" constant="30" id="t5i-aC-d0F"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fRG-WV-NIH" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="aRs-aQ-gNM" secondAttribute="trailing" priority="999" constant="16" id="1O9-fi-0pA"/>
+                            <constraint firstItem="Cer-mm-xx5" firstAttribute="centerY" secondItem="a2k-US-iNe" secondAttribute="centerY" id="4Ka-jr-weJ"/>
+                            <constraint firstItem="fRG-WV-NIH" firstAttribute="trailing" secondItem="ukM-rC-law" secondAttribute="trailing" constant="80" id="8ZW-Vz-SH8"/>
+                            <constraint firstItem="fRG-WV-NIH" firstAttribute="trailing" secondItem="a2k-US-iNe" secondAttribute="trailing" constant="80" id="8y3-Bz-qwD"/>
+                            <constraint firstItem="Cer-mm-xx5" firstAttribute="leading" secondItem="a2k-US-iNe" secondAttribute="trailing" constant="20" id="9Ri-bt-0dI"/>
+                            <constraint firstItem="fRG-WV-NIH" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="ukM-rC-law" secondAttribute="bottom" priority="999" constant="138" id="CJT-rn-gK5"/>
+                            <constraint firstItem="fRG-WV-NIH" firstAttribute="trailing" secondItem="sNi-H4-IeH" secondAttribute="trailing" constant="80" id="DNF-yK-Ze5"/>
+                            <constraint firstItem="a2k-US-iNe" firstAttribute="top" secondItem="W1c-2t-BE1" secondAttribute="bottom" constant="10" id="EYU-Dd-0Xs"/>
+                            <constraint firstItem="W1c-2t-BE1" firstAttribute="top" secondItem="fRG-WV-NIH" secondAttribute="top" constant="50" id="H9H-QS-O0B"/>
+                            <constraint firstItem="FuS-6Q-pEQ" firstAttribute="leading" secondItem="fRG-WV-NIH" secondAttribute="leading" constant="16" id="IOQ-cz-T0W"/>
+                            <constraint firstItem="W1c-2t-BE1" firstAttribute="leading" secondItem="fRG-WV-NIH" secondAttribute="leading" constant="16" id="JWH-0q-rRj"/>
+                            <constraint firstItem="sNi-H4-IeH" firstAttribute="top" secondItem="FuS-6Q-pEQ" secondAttribute="bottom" constant="15" id="Kuj-DF-liv"/>
+                            <constraint firstItem="ukM-rC-law" firstAttribute="leading" secondItem="fRG-WV-NIH" secondAttribute="leading" constant="80" id="Lst-i2-wHg"/>
+                            <constraint firstItem="LDh-VB-7gD" firstAttribute="leading" secondItem="fRG-WV-NIH" secondAttribute="leading" constant="16" id="MLp-Mc-hxc"/>
+                            <constraint firstItem="fRG-WV-NIH" firstAttribute="trailing" secondItem="OnR-bm-K4q" secondAttribute="trailing" constant="148.5" id="QP6-nc-oZe"/>
+                            <constraint firstItem="aRs-aQ-gNM" firstAttribute="centerY" secondItem="OnR-bm-K4q" secondAttribute="centerY" id="UxB-rU-8Oh"/>
+                            <constraint firstItem="fRG-WV-NIH" firstAttribute="trailing" secondItem="LDh-VB-7gD" secondAttribute="trailing" constant="16" id="VUD-hL-BL3"/>
+                            <constraint firstItem="LDh-VB-7gD" firstAttribute="leading" secondItem="fRG-WV-NIH" secondAttribute="leading" constant="16" id="biW-Eu-p8e"/>
+                            <constraint firstItem="fRG-WV-NIH" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Cer-mm-xx5" secondAttribute="trailing" priority="998" constant="16" id="e8r-Q5-bgs"/>
+                            <constraint firstItem="fRG-WV-NIH" firstAttribute="trailing" secondItem="LDh-VB-7gD" secondAttribute="trailing" constant="16" id="eFu-j4-RXi"/>
+                            <constraint firstItem="LDh-VB-7gD" firstAttribute="top" secondItem="sNi-H4-IeH" secondAttribute="bottom" constant="40" id="eRe-YV-We9"/>
+                            <constraint firstItem="a2k-US-iNe" firstAttribute="leading" secondItem="fRG-WV-NIH" secondAttribute="leading" constant="80" id="jKC-aG-mdg"/>
+                            <constraint firstItem="sNi-H4-IeH" firstAttribute="leading" secondItem="fRG-WV-NIH" secondAttribute="leading" constant="80" id="jcL-iV-NI7"/>
+                            <constraint firstItem="OnR-bm-K4q" firstAttribute="leading" secondItem="fRG-WV-NIH" secondAttribute="leading" constant="148.5" id="nsY-3h-2In"/>
+                            <constraint firstItem="aRs-aQ-gNM" firstAttribute="leading" secondItem="OnR-bm-K4q" secondAttribute="trailing" constant="20" id="nuM-jb-ubw"/>
+                            <constraint firstItem="ukM-rC-law" firstAttribute="top" secondItem="LDh-VB-7gD" secondAttribute="bottom" constant="15" id="oVW-Qy-vhJ"/>
+                            <constraint firstItem="fRG-WV-NIH" firstAttribute="trailing" secondItem="W1c-2t-BE1" secondAttribute="trailing" constant="16" id="pjw-Tu-bSE"/>
+                            <constraint firstItem="fRG-WV-NIH" firstAttribute="trailing" secondItem="FuS-6Q-pEQ" secondAttribute="trailing" constant="16" id="pn0-1H-1YB"/>
+                            <constraint firstItem="OnR-bm-K4q" firstAttribute="top" secondItem="a2k-US-iNe" secondAttribute="bottom" constant="15" id="pph-Wf-8cI"/>
+                            <constraint firstItem="FuS-6Q-pEQ" firstAttribute="top" secondItem="OnR-bm-K4q" secondAttribute="bottom" constant="40" id="ysB-b8-CtS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fRG-WV-NIH"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Вычисления" image="repeat" id="f7j-1h-b26"/>
+                    <navigationItem key="navigationItem" id="z66-Uh-z5S"/>
+                    <connections>
+                        <outlet property="notChangeField" destination="ukM-rC-law" id="YVe-au-OBm"/>
+                        <outlet property="numberField" destination="a2k-US-iNe" id="3hH-G1-OHV"/>
+                        <outlet property="onChangeField" destination="sNi-H4-IeH" id="Y5F-CQ-JuH"/>
+                        <outlet property="spiner" destination="aRs-aQ-gNM" id="0G9-Am-1F5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Waj-jh-ILH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3893.5999999999999" y="554.57271364317842"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="nXu-5Z-bib">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="7Vh-0t-qPt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="u55-WZ-Hmk">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="y6T-hG-iJS"/>
+                        <segue destination="jpz-YW-uUR" kind="relationship" relationship="viewControllers" id="iJf-tY-NDG"/>
+                        <segue destination="wED-lf-u7U" kind="relationship" relationship="viewControllers" id="Arv-sh-6EM"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="blE-WA-4RQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3893.5999999999999" y="-234.33283358320841"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="door" width="612" height="584"/>
+        <image name="game_controller" width="30" height="30"/>
+        <image name="info" width="30" height="30"/>
+        <image name="repeat" width="30" height="30"/>
+    </resources>
+</document>
